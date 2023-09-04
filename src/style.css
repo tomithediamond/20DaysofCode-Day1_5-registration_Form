@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 16px;
+    color: white;
+    background-color:hsl(0, 100%, 74%);
+    background-size: cover;
+    background-image: url("./../images/bg-intro-desktop.png");
+    font-family: 'Poppins', sans-serif;
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+    padding: 0px 150px;
+}
+section{
+    max-width: 100%;
+    width: 50%;
+}
+.words{
+    padding-right: 30px;
+}
+h1{
+    font-size: 50px;
+    margin-bottom: 35px;
+    line-height: 56px;
+}
+.words p{
+    line-height: 25px;
+}
+.info{
+    width: 90%;
+    text-align: center;
+    background-color: hsl(248, 32%, 49%);
+    border-radius: 5px;
+    padding: 20px 40px;
+    margin-bottom: 20px;
+}
+.form{
+    width: 90%;
+    background-color: white;
+    align-items: center;
+    padding: 15px;
+    
+    border-radius: 5px;
+}
+form div{
+    display: flex;
+    flex-direction: column;
+}
+input, button{
+    width: 100%;
+    border: 2px solid rgb(233, 228, 228);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 15px 25px;
+    font-weight: 600;
+}
+button{
+    color: white;
+    font-size: 16px;
+    background-color:hsl(154, 59%, 51%);
+}
+footer{
+    color: hsl(246, 25%, 77%);
+    text-align: center;
+    font-size: 8px;
+    margin: auto;
+}
+span{
+    color: hsl(0, 100%, 74%);
+    font-weight: 800;
+}
+.ref span{
+    color:rgb(0, 110, 255);
+}
+
+input:focus,
+button:focus{
+    outline: none;
+}
+button:hover{
+    opacity: 0.7;
+}
+
+@media (max-width: 768px){
+    main{
+        background-image: url("../images/bg-intro-mobile.png");
+        background-color:hsl(0, 100%, 74%);
+        padding: 30px 15px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    section{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .words{
+        text-align: center;
+        padding: 40px 0px 60px;
+    }
+    h1{
+        font-size: 38px;
+    }
+    .info{
+        padding: 15px 60px;
+    }
+    footer{
+        text-align: center;
+    }
+}
